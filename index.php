@@ -107,37 +107,37 @@
             <ul class="owl-carousel owl-theme">
                <li class="products-item">
                   <a href="#" class="slider-link">
-                     <div class="slider-bg cover-image" style="background-image: url(../pic/products-slider/gasoline.jpg);"></div>  
+                     <div class="slider-bg cover-image" style="background-image: url(pic/products-slider/gasoline.jpg);"></div>  
                      <div class="slider-title">Бензин</div>   
                   </a>
                </li>
                <li class="products-item">
                   <a href="#" class="slider-link">
-                     <div class="slider-bg cover-image" style="background-image: url(../pic/products-slider/oil.jpg);"></div>
+                     <div class="slider-bg cover-image" style="background-image: url(pic/products-slider/oil.jpg);"></div>
                      <div class="slider-title">Масло</div>   
                   </a>
                </li>
                <li class="products-item">
                   <a href="#" class="slider-link">
-                     <div class="slider-bg cover-image" style="background-image: url(../pic/products-slider/disel.jpg);"></div>
+                     <div class="slider-bg cover-image" style="background-image: url(pic/products-slider/disel.jpg);"></div>
                      <div class="slider-title">Дизельное топливо</div>   
                   </a>
                </li>
                <li class="products-item">
                   <a href="#" class="slider-link">
-                     <div class="slider-bg cover-image" style="background-image: url(../pic/products-slider/gasoline-2.jpg);"></div>
+                     <div class="slider-bg cover-image" style="background-image: url(pic/products-slider/gasoline-2.jpg);"></div>
                      <div class="slider-title">Печное топливо</div>   
                   </a>
                </li>
                <li class="products-item">
                   <a href="#" class="slider-link">
-                     <div class="slider-bg  cover-image" style="background-image: url(../pic/products-slider/disel.jpg);"></div>
+                     <div class="slider-bg  cover-image" style="background-image: url(pic/products-slider/disel.jpg);"></div>
                      <div class="slider-title">Дизельное топливо</div>   
                   </a>
                </li>
                <li class="products-item">
                   <a href="#" class="slider-link">
-                     <div class="slider-bg cover-image" style="background-image: url(../pic/products-slider/oil.jpg);"></div>
+                     <div class="slider-bg cover-image" style="background-image: url(pic/products-slider/oil.jpg);"></div>
                      <div class="slider-title">Масло</div>   
                   </a>
                </li>
