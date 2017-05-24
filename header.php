@@ -6,27 +6,24 @@
 </svg>
 <header class="header">
 	<div class="container">
-		<div class="row">
-			<div class="col-md-4">
-				<a href="index.php" class="brand-logo"><img src="images/logo.svg" width="200" height="56" alt="NPT"></a>
-      	</div>
-			<div class="col-md-8">
-				<a href="#" class="btn btn-buy">Купить дизельное топливо</a>
-				
+		<div class="header-top">
+			<a href="index.php" class="brand-logo"><img src="images/logo.svg" width="200" height="56" alt="NPT"></a>
+			<a href="#" class="btn btn-buy">Купить дизельное топливо</a>
+			<div class="contact-b-wrap">
 				<div class="contact-b">
 					<div class="contact-b-title">Время работы</div>
+					<div class="contact-desc">09:00 до 22:00<br/>Поставки круглосуточно</div>
+				</div>
+				<div class="contact-b">
+					<div class="contact-b-title">Телефон</div>
 					<div class="contact-desc">
 						<a href="tel:+79990123456" class="tel">+7 (999) 012-34-56</a>
 					</div>
 					<button type="button" class="btn-modal" data-modal="#callback">Заказать обратный звонок</button>
 				</div>
-   			<div class="contact-b">
-					<div class="contact-b-title">Время работы</div>
-					<div class="contact-desc">09:00 до 22:00<br/>Поставки круглосуточно</div>
-				</div>
 			</div>
 		</div>
-   </div>
+	</div>
    <nav class="navbar">
    	<div class="container">
    		<button type="button" class="navbar-toggle collapsed toggle-menu menu-left push-body" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
@@ -36,12 +33,12 @@
 		   	<ul class="nav navbar-nav">
 			   	<li class="nav-item"><a href="inner.php">Главная</a></li>
 			   	<li class="nav-item dropdown">
-			   		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Нефетпродукты<span class="caret"></span></a>
+			   		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Нефтепродукты<span class="caret"></span></a>
 			   		<ul class="dropdown-menu">
-			   			<li class="nav-item"><a href="inner.php">Нефетпродукты 1</a></li>
-			   			<li class="nav-item"><a href="inner.php">Нефетпродукты 2</a></li>
-			   			<li class="nav-item"><a href="inner.php">Нефетпродукт длянное название 3</a></li>
-			   			<li class="nav-item"><a href="inner.php">Нефетпродукты 4</a></li>
+			   			<li class="nav-item"><a href="inner.php">Нефтепродукты 1</a></li>
+			   			<li class="nav-item"><a href="inner.php">Нефтепродукты 2</a></li>
+			   			<li class="nav-item"><a href="inner.php">Нефтепродукт</a></li>
+			   			<li class="nav-item"><a href="inner.php">Нефтепродукты 4</a></li>
 			   		</ul>
 			   	</li>
 			   	<li class="nav-item active"><a href="inner.php">Компания</a></li>

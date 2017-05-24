@@ -1,5 +1,5 @@
    <footer class="footer">
-      <div class="container">
+      <div class="container reveal-anim">
       	<div class="f-cols">
             <div class="f-col f-brand">
                   <a href="/" class="f-logo">
@@ -8,6 +8,7 @@
                <div class="f-text copyright">
                   <div>© 2003–2017 ООО «НПТ»</div>
                   <a href="/">Контактная информация</a>
+                  <br/>
                   <a href="/">Карта сайта</a>
                </div>
             </div>
@@ -45,7 +46,7 @@
             <div class="f-col">
                <div class="f-title">Контакты</div>
                <div class="contact-b">
-                  <div class="contact-b-title">Время работы</div>
+                  <div class="contact-b-title">Телефон</div>
                   <div class="contact-desc">
                      <a href="tel:+79990123456" class="tel">+7 (999) 012-34-56</a>
                   </div>

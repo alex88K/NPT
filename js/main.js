@@ -10,7 +10,8 @@ $(function() {
 		items: 1,
 		nav: false,
 		dots: false,
-		loop: true 
+		loop: true,
+		mouseDrag: false
 	});
 
 
@@ -44,22 +45,42 @@ $(function() {
   		autoplay: true,
   		autoplayTimeout: 8000,
   		autoplayHoverPause: true,
-  		autoplaySpeed: 500
+  		autoplaySpeed: 500,
+  		responsive: {
+  			0: { items: 2 },
+  			480: { items: 3 },
+  			768: { items: 4 },
+  			1170: { items: 6}
+  		}	
   	});
+
+  	rangeSlider();
 
 /*--Animation-------------------*/
 
 	window.sr = ScrollReveal();
-	sr.reveal('.reveal-anim', { duration: 800 });
-	sr.reveal('.reveal-anim', { afterReveal: function(domEl) { 
-			$(domEl).css({ 
-				'-webkit-transform': 'none', 
-				'transform': 'none'
-			});
-		} });
+	sr.reveal('.reveal-anim', { duration: 800, reset: true, viewFactor: 0.3, });
 	sr.reveal('.reveal-left', { duration: 800, origin: 'left', distance: '100px' });
 	sr.reveal('.reveal-right', { duration: 800, origin: 'right', distance: '100px' });
 });
+
+var rangeSlider = function(){
+  var slider = $('.range-slider'),
+      range = $('.range-slider__range'),
+      value = $('.range-slider__value');
+    
+  	slider.each(function(){
+	   value.each(function(){
+	   	var value = $(this).prev().attr('value');
+	   	$(this).html(value);
+		});
+
+	   range.on('input', function(){
+	   	$(this).next(value).html(this.value);
+	   });
+	});
+};
+
 
 /*!
  * jPushMenu.js
