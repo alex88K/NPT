@@ -45,7 +45,6 @@ $(function() {
 
 	$('#gas_type').on('change', function() {
 	   tarif = $("#gas_type :selected").val();
-	   console.log(tarif);
 	   recount();
 	});
 
@@ -93,6 +92,7 @@ $(function() {
 		margin: 0,
 		
 		autoplay: true,
+		autoplayTimeout: 3000,
 		autoplayHoverPause: true,
 		autoplaySpeed: 500,
 		responsive: {
@@ -117,7 +117,7 @@ $(function() {
   		loop: true,
   		margin: 15,
   		autoplay: true,
-  		autoplayTimeout: 8000,
+  		autoplayTimeout: 5000,
   		autoplayHoverPause: true,
   		autoplaySpeed: 500,
   		responsive: {
