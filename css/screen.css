@@ -1507,6 +1507,14 @@ select {
     display: inline-block;
   }
 
+  .calculator .range-slider {
+    margin-right: 0;
+  }
+
+  .promo-slider-item .slider-info {
+    top: 30%;
+  }
+
   .promo-slider {
     height: 900px;
   }
@@ -1800,6 +1808,10 @@ select {
     display: none;
   }
 
+  .calculator {
+    display: none;
+  }
+
   .promo-slider {
     height: 100vh;
   }
@@ -1809,9 +1821,6 @@ select {
   }
   .promo-slider-item .slider-title {
     font-size: 205%;
-  }
-  .promo-slider-item .calculator {
-    display: none;
   }
   .promo-slider-item .slider-info {
     top: 50%;

@@ -13,9 +13,9 @@ $(function() {
 	
 	var slider_capacity = $("#order_capacity"),
 		slider_distance = $("#order_distance"),
-		tarif = 20,
+		tarif = 39,
 	   result_output = $(".overall-price"),
-	   order_capacity = 5000,
+	   order_capacity = 50000,
 	   distance = 500;
 	
 	slider_capacity.slider({

@@ -1326,6 +1326,10 @@ select {
 
 	.slider-info .btn-buy { display: inline-block; }
 
+	.calculator .range-slider { margin-right: 0; }
+
+	.promo-slider-item .slider-info { top: 30%; }
+
 	.promo-slider { height: 900px; }
 
 	.promo-slider-item { height: 900px; }
@@ -1549,12 +1553,13 @@ select {
 
 @media screen and (max-width: 768px) {
 	.header .contact-b-wrap { display: none; }
+	
+	.calculator { display: none; }
 
 	.promo-slider { height: 100vh; }
 	.promo-slider-item {
 		height: 100vh;
 		.slider-title { font-size: 205% }
-		.calculator { display: none; }
 		.slider-info { 
 			top: 50%;
 			padding: 0 5% 5% 0; 
