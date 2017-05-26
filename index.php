@@ -3,6 +3,59 @@
 <div class="layout">
    <?php include "header.php" ?>
    <main class="main">
+      <div class="calculator">
+         <div class="container">
+            <div class="calculator-head">Расчет стоимости топлива</div>
+            <div class="calculator-body">
+               <form action="" class="calculator_form">
+                  <div class="form-group">
+                     <label for="gas_type">Выберите сорт:</label>
+                     <div class="st-select">
+                        <select name="gas_type" id="gas_type">
+                           <option value="39">ЕВРО 3 ГОСТ Зимнее 30</option>
+                           <option value="40">ЕВРО 3 ГОСТ Зимнее 10</option>
+                           <option value="30">ЕВРО 3 ГОСТ Летнее 25</option>
+                           <option value="20">ЕВРО 3 ГОСТ Летнее 12</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <div class="range-slider-wrap">
+                        <div class="range-slider order_capacity">
+                           <div class="pull-left">
+                              <span class="slider-label">Укажите объём:</span>
+                              <div id="order_capacity" class="range-slider-field"></div>
+                           </div>
+                           <div class="pull-right">
+                              <input type="text" class="range-slider__value" id="capacity_value" value="5000">
+                              <i>Л</i>
+                           </div>
+                        </div>
+                        <div class="range-slider order_distance">
+                           <div class="pull-left">
+                              <span class="slider-label">Доставка Москва:</span>
+                              <div id="order_distance" class="range-slider-field"></div>
+                           </div>
+                           <div class="pull-right">
+                           <input type="text" class="range-slider__value" id="distance_value" value="500">
+                           <i>КМ<span>от МКАД</span></i>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="overall">
+                     <div class="pull-left">
+                        <div class="price-wrap">Стоимость топлива с учетом доставки: <span class="overall-price">29 руб/л</span></div>
+                        <div class="asterisk-text">*указана ориентировочная стоимость, подробности уточняйте у менеджера</div>
+                     </div>
+                     <div class="submit-wrap pull-right">
+                        <input type="submit" class="btn btn-order" name="order" value="Оформить заказ">
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
       <div class="promo-slider">
       	<ul class="owl-carousel owl-theme slider-wrap">
       		<li class="promo-slider-item">
@@ -11,55 +64,14 @@
          			<div class="slider-info">
                      <a href="#" class="btn btn-buy">Купить дизельное топливо</a>
       	   			<h2 class="slider-title">ПОСТАВКА ДИЗЕЛЬНОГО ТОПЛИВА В МОСКВЕ И МОСКОВСКОЙ ОБЛАСТИ <i>ОТ 1000 ЛИТРОВ</i></h2>
-      	   			<div class="calculator">
-                        <div class="calculator-head">Расчет стоимости топлива</div>
-                        <div class="calculator-body">
-                           <form action="#" class="calculator_form">
-                              <div class="form-group">
-                                 <label for="gas_type">Выберите сорт:</label>
-                                 <div class="st-select">
-                                    <select name="gas_type" id="gas_type">
-                                       <option value="euro3winter20">ЕВРО 3 ГОСТ Зимнее 20</option>
-                                       <option value="euro3winter10">ЕВРО 3 ГОСТ Зимнее 10</option>
-                                       <option value="euro3summer20">ЕВРО 3 ГОСТ Летнее 20</option>
-                                       <option value="euro3summer10">ЕВРО 3 ГОСТ Летнее 20</option>
-                                    </select>
-                                 </div>
-                              </div>
-                              <div class="form-group">
-                                 <div class="range-slider-wrap">
-                                    <label for="order_capacity">Укажите объём:</label>
-                                    <div class="range-slider range-slider-capacity">
-                                       <input type="range" id="order_capacity" class="range-slider__range"  value="5000" min="0" max="100000">
-                                       <span class="range-slider__value">5000</span><i>Л</i>
-                                    </div>
-                                    <label for="order_distance">Доставка Москва:</label>
-                                    <div class="range-slider range-slider-distance">
-                                       <input type="range" id="order_distance" class="range-slider__range"  value="700" min="0" max="10000">
-                                       <span class="range-slider__value">5000</span><i>КМ<span>от МКАД</span></i>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="overall">
-                                 <div class="pull-left">
-                                    <div class="price-wrap">Стоимость топлива с учетом доставки: <span class="overall-price">29 руб/л</span></div>
-                                    <div class="asterisk-text">*указана ориентировочная стоимость, подробности уточняйте у менеджера</div>
-                                 </div>
-                                 <div class="submit-wrap pull-right">
-                                    <input type="submit" class="btn btn-order" name="order" value="Оформить заказ">
-                                 </div>
-                              </div>
-                           </form>
-                        </div>
-                     </div>
       				</div>
                </div>
       		</li>
       	</ul>
       </div>
       <section class="details">
-         <div class="details-slide cover-image" style="background: transparent url(images/details/transport.jpg);">
-            <div class="overlay">&nbsp;</div>
+         <div class="details-slide">
+            <div class="details-bg cover-image" style="background: transparent url(images/details/transport.jpg);"></div>
             <div class="details-info">
                <div class="details-sup">Мы поставляем топливо для:</div>
                <div class="details-title">Транспорт</div>
@@ -67,8 +79,8 @@
             </div>
             <a href="#" class="details-btn"><svg class="arrow-i"><use xlink:href="#details-btn-i"></use></svg>Подробнее</a>
          </div>
-         <div class="details-slide cover-image" style="background: transparent url(images/details/boiler.jpg);">
-            <div class="overlay">&nbsp;</div>
+         <div class="details-slide">
+            <div class="details-bg cover-image" style="background: transparent url(images/details/boiler.jpg);"></div>
             <div class="details-info">
                <div class="details-sup">Мы поставляем топливо для:</div>
                <div class="details-title">Для котельных</div>
@@ -76,8 +88,8 @@
             </div>
             <a href="#" class="details-btn"><svg class="arrow-i"><use xlink:href="#details-btn-i"></use></svg>Подробнее</a>
          </div>
-         <div class="details-slide cover-image" style="background: transparent url(images/details/house.jpg);">
-            <div class="overlay">&nbsp;</div>
+         <div class="details-slide">
+            <div class="details-bg cover-image" style="background: transparent url(images/details/house.jpg);"></div>
             <div class="details-info">
                <div class="details-sup">Мы поставляем топливо для:</div>
                <div class="details-title">Для частных<br/>домов и коттеджей</div>
@@ -85,8 +97,8 @@
             </div>
             <a href="#" class="details-btn"><svg class="arrow-i"><use xlink:href="#details-btn-i"></use></svg>Подробнее</a>
          </div>
-         <div class="details-slide cover-image" style="background: transparent url(images/details/building.jpg);">
-            <div class="overlay">&nbsp;</div>
+         <div class="details-slide">
+            <div class="details-bg cover-image" style="background: transparent url(images/details/building.jpg);"></div>
             <div class="details-info">
                <div class="details-sup">Мы поставляем топливо для:</div>
                <div class="details-title">Для строительства</div>
@@ -226,7 +238,7 @@
          </div>
       </section>
    	<section class="contact-map">
-         <img id="map" src="pic/map.jpg" width="1920" height="404">
+         <div id="map"></div>
       </section>
    </main>
    <?php include "footer.php" ?>
