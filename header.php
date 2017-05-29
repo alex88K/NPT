@@ -7,7 +7,12 @@
 <header class="header">
 	<div class="container">
 		<div class="header-top">
-			<a href="index.php" class="brand-logo"><img src="images/logo.svg" width="200" height="56" alt="NPT"></a>
+			<a href="index.php" class="brand-logo">
+				<!-- home page -->
+				<!-- <img src="images/logo.svg" width="200" height="56" alt="NPT"> -->
+				<!-- inner page -->
+				<img src="images/logo-in.svg" width="200" height="56" alt="NPT">
+			</a>
 			<a href="#" class="btn btn-buy">Купить дизельное топливо</a>
 			<div class="contact-b-wrap">
 				<div class="contact-b">
@@ -33,15 +38,16 @@
 		   	<ul class="nav navbar-nav">
 			   	<li class="nav-item"><a href="inner.php">Главная</a></li>
 			   	<li class="nav-item dropdown">
-			   		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Нефтепродукты<span class="caret"></span></a>
+			   		<a href="inner.php" aria-haspopup="true" aria-expanded="false">Нефтепродукты<span class="caret"></span><label class="drop-icon" for="mm-1">▾</label></a>
+			   		<input type="checkbox" name="mm-1" id="mm-1">
 			   		<ul class="dropdown-menu">
-			   			<li class="nav-item"><a href="inner.php">Нефтепродукты 1</a></li>
-			   			<li class="nav-item"><a href="inner.php">Нефтепродукты 2</a></li>
-			   			<li class="nav-item"><a href="inner.php">Нефтепродукт</a></li>
-			   			<li class="nav-item"><a href="inner.php">Нефтепродукты 4</a></li>
+			   			<li class="nav-item"><a href="inner1.php">Нефтепродукты 1</a></li>
+			   			<li class="nav-item"><a href="inner2.php">Нефтепродукты 2</a></li>
+			   			<li class="nav-item"><a href="inner3.php">Нефтепродукт</a></li>
+			   			<li class="nav-item"><a href="inner4.php">Нефтепродукты 4</a></li>
 			   		</ul>
 			   	</li>
-			   	<li class="nav-item active"><a href="inner.php">Компания</a></li>
+			   	<li class="nav-item"><a href="inner.php">Компания</a></li>
 			   	<li class="nav-item"><a href="inner.php">Документы</a></li>
 			   	<li class="nav-item"><a href="inner.php">Доставка</a></li>
 			   	<li class="nav-item"><a href="inner.php">Контакты</a></li>

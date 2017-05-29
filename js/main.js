@@ -8,8 +8,6 @@ $(function() {
 
 	var promo_left = $('.brand-logo').offset().left - 15;
 	$('.calculator').css('left', promo_left + 'px');
-
-	console.log(promo_left);
 	
 	var slider_capacity = $("#order_capacity"),
 		slider_distance = $("#order_distance"),
@@ -77,10 +75,14 @@ $(function() {
 		mouseDrag: false
 	});
 
-	products_slider_fit_to_screen();
+	if( $('body').hasClass('home') ) {
+		products_slider_fit_to_screen();
+	}
 
 	$(window).on('resize', function() {
-		products_slider_fit_to_screen();
+		if( $('body').hasClass('home') ) {
+			products_slider_fit_to_screen();
+		}
 	});
 
 	var products_sl = $('.products-slider .owl-carousel');

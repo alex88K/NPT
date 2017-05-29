@@ -49,7 +49,7 @@
                         <div class="asterisk-text">*указана ориентировочная стоимость, подробности уточняйте у менеджера</div>
                      </div>
                      <div class="submit-wrap pull-right">
-                        <input type="submit" class="btn btn-order" name="order" value="Оформить заказ">
+                        <input type="submit" class="btn btn-red" name="order" value="Оформить заказ">
                      </div>
                   </div>
                </form>
