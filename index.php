@@ -3,67 +3,17 @@
 <div class="layout">
    <?php include "header.php" ?>
    <main class="main">
-      <div class="calculator">
-         <div class="container">
-            <div class="calculator-head">Расчет стоимости топлива</div>
-            <div class="calculator-body">
-               <form action="" class="calculator_form">
-                  <div class="form-group">
-                     <label for="gas_type">Выберите сорт:</label>
-                     <div class="st-select">
-                        <select name="gas_type" id="gas_type">
-                           <option value="39">ЕВРО 3 ГОСТ Зимнее 30</option>
-                           <option value="40">ЕВРО 3 ГОСТ Зимнее 10</option>
-                           <option value="30">ЕВРО 3 ГОСТ Летнее 25</option>
-                           <option value="20">ЕВРО 3 ГОСТ Летнее 12</option>
-                        </select>
-                     </div>
-                  </div>
-                  <div class="form-group">
-                     <div class="range-slider-wrap">
-                        <div class="range-slider order_capacity">
-                           <div class="pull-left">
-                              <span class="slider-label">Укажите объём:</span>
-                              <div id="order_capacity" class="range-slider-field"></div>
-                           </div>
-                           <div class="pull-right">
-                              <input type="text" class="range-slider__value" id="capacity_value" value="5000">
-                              <i>Л</i>
-                           </div>
-                        </div>
-                        <div class="range-slider order_distance">
-                           <div class="pull-left">
-                              <span class="slider-label">Доставка Москва:</span>
-                              <div id="order_distance" class="range-slider-field"></div>
-                           </div>
-                           <div class="pull-right">
-                           <input type="text" class="range-slider__value" id="distance_value" value="500">
-                           <i>КМ<span>от МКАД</span></i>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="overall">
-                     <div class="pull-left">
-                        <div class="price-wrap">Стоимость топлива с учетом доставки: <span class="overall-price">29 руб/л</span></div>
-                        <div class="asterisk-text">*указана ориентировочная стоимость, подробности уточняйте у менеджера</div>
-                     </div>
-                     <div class="submit-wrap pull-right">
-                        <input type="submit" class="btn btn-red" name="order" value="Оформить заказ">
-                     </div>
-                  </div>
-               </form>
-            </div>
-         </div>
-      </div>
       <div class="promo-slider">
       	<ul class="owl-carousel owl-theme slider-wrap">
       		<li class="promo-slider-item">
       			<div class="slider-bg cover-image" style="background-image: url(pic/promo-slider/slide1.jpg)"></div>
                <div class="container">
          			<div class="slider-info">
-                     <a href="#" class="btn btn-buy">Купить дизельное топливо</a>
       	   			<h2 class="slider-title">ПОСТАВКА ДИЗЕЛЬНОГО ТОПЛИВА В МОСКВЕ И МОСКОВСКОЙ ОБЛАСТИ <i>ОТ 1000 ЛИТРОВ</i></h2>
+                     <div class="btn-group">
+                        <a href="calculator-page.php" class="btn btn-l-red">Расчет стоимости топлива</a>
+                        <a href="#" class="btn btn-buy">Купить дизельное топливо</a>
+                     </div>
       				</div>
                </div>
       		</li>
@@ -114,22 +64,22 @@
                <div class="section-sub">Только у нас</div>
             </header>
             <ul class="row advantage-list">
-               <li class="col-md-3 col-sm-6 col-xs-12 advantage-item reveal-anim">
+               <li class="col-md-3 col-sm-6 col-xs-6 advantage-item reveal-anim">
                   <div class="advantage-i canister-i"></div>
                   <div class="advantage-title">Топливо есть всегда</div>
                   <div class="advantage-text">Дизельное Топливо с доставкой или самовывоз с любой нефтебазы Москвыи Ленинградской области</div>
                </li>
-               <li class="col-md-3 col-sm-6 col-xs-12 advantage-item reveal-anim">
+               <li class="col-md-3 col-sm-6 col-xs-6 advantage-item reveal-anim">
                   <div class="advantage-i truck-i"></div>
                   <div class="advantage-title">Свой автотранспорт</div>
                   <div class="advantage-text">Осуществляем доставку Дизельного Топлива своим автотранспортом. От 100 до 25 000 л. Стоимость перевозки ДТ от 0.30 руб за литр</div>
                </li>
-               <li class="col-md-3 col-sm-6 col-xs-12 advantage-item reveal-anim">
+               <li class="col-md-3 col-sm-6 col-xs-6 advantage-item reveal-anim">
                   <div class="advantage-i rocket-i"></div>
                   <div class="advantage-title">Быстрая доставка</div>
                   <div class="advantage-text">Доставка в течении суток после согласования. Срочная доставка от 1 ч. Оставьте заявку. Мы Вам перезвоним</div>
                </li>
-               <li class="col-md-3 col-sm-6 col-xs-12 advantage-item reveal-anim">
+               <li class="col-md-3 col-sm-6 col-xs-6 advantage-item reveal-anim">
                   <div class="advantage-i hand-i"></div>
                   <div class="advantage-title">Удобная оплата</div>
                   <div class="advantage-text">Доставка в течении суток после согласования. Срочная доставка от 1 ч. Оставьте заявку. Мы Вам перезвоним</div>

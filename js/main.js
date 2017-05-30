@@ -6,8 +6,7 @@ $(function() {
 
 /*--calculator-------------------------------------*/
 
-	var promo_left = $('.brand-logo').offset().left - 15;
-	$('.calculator').css('left', promo_left + 'px');
+	calculator_fit_to_screen();
 	
 	var slider_capacity = $("#order_capacity"),
 		slider_distance = $("#order_distance"),
@@ -82,6 +81,7 @@ $(function() {
 	$(window).on('resize', function() {
 		if( $('body').hasClass('home') ) {
 			products_slider_fit_to_screen();
+			calculator_fit_to_screen();
 		}
 	});
 
@@ -149,6 +149,11 @@ function products_slider_fit_to_screen() {
 		products_container.css('left', products_promo_left + 'px');
 		products_container.css('width', products_slider_width + 'px');
 	} else { return false; }
+}
+
+function calculator_fit_to_screen() {
+	var promo_left = $('.header .container').offset().left;
+	$('.calculator').css('left', promo_left + 'px');
 }
 
 /*!

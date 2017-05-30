@@ -9,35 +9,56 @@
    	<div class="content-wrap">
    		<div class="container">
 				<div class="catalog">
-					<a role="button" data-toggle="collapse" href="#catalog" class="catalog-title" aria-expanded="true">Наша продукция</a>
+					<a role="button" data-toggle="collapse" href="#catalog" class="catalog-title" aria-expanded="false" aria-controls="catalog">Наша продукция</a>
 					<ul class="catalog-list collapse in" id="catalog">
 						<li class="catalog-item">
 							<a role="button" data-toggle="collapse" href="#gasoline-list" aria-expanded="false">Бензин</a>
-							<ul class="catalog-item-sub collapse" id="gasoline-list">
-								<li class="catalog-item active"><a href="/">80</a></li>
-								<li class="catalog-item"><a href="/">95</a></li>
-								<li class="catalog-item"><a href="/">98</a></li>
-								<li class="catalog-item"><a href="/">92</a></li>
-							</ul>
+							<div class="collapse" id="gasoline-list">
+								<ul class="catalog-item-sub">
+									<li class="catalog-item active"><a href="/">80</a></li>
+									<li class="catalog-item"><a href="/">95</a></li>
+									<li class="catalog-item"><a href="/">98</a></li>
+									<li class="catalog-item"><a href="/">92</a></li>
+								</ul>
+							</div>
 						</li>
 						<li class="catalog-item">
-							<a role="button" data-toggle="collapse" href="/" aria-expanded="false">Дизельное топливо</a>
+							<a role="button" data-toggle="collapse" href="#disel-list" aria-expanded="false">Дизельное топливо</a>
+							<div class="collapse" id="disel-list">
+								<ul class="catalog-item-sub" >
+									<li class="catalog-item active"><a href="/">80</a></li>
+									<li class="catalog-item"><a href="/">95</a></li>
+									<li class="catalog-item"><a href="/">98</a></li>
+									<li class="catalog-item"><a href="/">92</a></li>
+								</ul>
+							</div>
 						</li>
 						<li class="catalog-item">
-							<a role="button" data-toggle="collapse" href="/" aria-expanded="false">Масло</a>
+							<a role="button" data-toggle="collapse" href="#oil-list" aria-expanded="false">Масло</a>
+							<div class="collapse" id="oil-list">
+								<ul class="catalog-item-sub">
+									<li class="catalog-item active"><a href="/">80</a></li>
+									<li class="catalog-item"><a href="/">95</a></li>
+									<li class="catalog-item"><a href="/">98</a></li>
+									<li class="catalog-item"><a href="/">92</a></li>
+								</ul>
+							</div>
 						</li>
 						<li class="catalog-item">
-							<a role="button" data-toggle="collapse" href="/" aria-expanded="false">Печное топливо</a>
+							<a href="/">Печное топливо</a>
 						</li>
 						<li class="catalog-item">
-							<a role="button" data-toggle="collapse" href="/" aria-expanded="false">Бензин</a>
+							<a href="/">Бензин</a>
 						</li>
 						<li class="catalog-item">
-							<a role="button" data-toggle="collapse" href="/" aria-expanded="false">Дизельное топливо</a>
+							<a href="/">Дизельное топливо</a>
 						</li>
-						<li class="catalog-item"><a role="button" data-toggle="collapse" href="/" aria-expanded="false">Масло</a>
+						<li class="catalog-item">
+							<a href="/">Масло</a>
 						</li>
-						<li class="catalog-item"><a role="button" data-toggle="collapse" href="/" aria-expanded="false">Печное топливо</a></li>
+						<li class="catalog-item">
+							<a href="/">Печное топливо</a>
+						</li>
 					</ul>
 				</div>
 				<div class="content-screen">
