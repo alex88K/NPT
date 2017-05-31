@@ -4,6 +4,7 @@
             <div class="f-col f-col-1 f-brand">
                   <a href="/" class="brand-logo f-logo">
                      <svg class="logo-i"><use id="logo-footer" xlink:href="#logo-svg"></use></svg>
+                     <svg class="logo-i moblogo-i"><use id="moblogo-footer" xlink:href="#moblogo-svg"></use></svg>
                   </a>
                <div class="f-text copyright">
                   <div>© 2003–2017 ООО «НПТ»</div>
@@ -50,7 +51,7 @@
                   <div class="contact-desc">
                      <a href="tel:+79990123456" class="tel">+7 (999) 012-34-56</a>
                   </div>
-                  <button type="button" class="btn-modal" data-modal="#callback">Заказать обратный звонок</button>
+                  <button type="button" class="btn-modal" data-toggle="modal" data-target="#modal-callback">Заказать обратный звонок</button>
                </div>
                <div class="contact-b">
                   <div class="contact-b-title">Время работы</div>
@@ -68,59 +69,7 @@
       </div>
    </footer>
 </div>
-<div class="calculator modal fade" id="calculator" role="dialog">
-   <div class="container">
-      <div class="calculator-head">Расчет стоимости топлива<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
-      <div class="calculator-body">
-         <form action="" class="calculator_form">
-            <div class="form-group">
-               <label for="gas_type">Выберите сорт:</label>
-               <div class="st-select">
-                  <select name="gas_type" id="gas_type">
-                     <option value="39">ЕВРО 3 ГОСТ Зимнее 30</option>
-                     <option value="40">ЕВРО 3 ГОСТ Зимнее 10</option>
-                     <option value="30">ЕВРО 3 ГОСТ Летнее 25</option>
-                     <option value="20">ЕВРО 3 ГОСТ Летнее 12</option>
-                  </select>
-               </div>
-            </div>
-            <div class="form-group">
-               <div class="range-slider-wrap">
-                  <div class="range-slider order_capacity">
-                     <div class="pull-left">
-                        <span class="slider-label">Укажите объём:</span>
-                        <div id="order_capacity" class="range-slider-field"></div>
-                     </div>
-                     <div class="pull-right">
-                        <input type="text" class="range-slider__value" id="capacity_value" value="5000">
-                        <i>Л</i>
-                     </div>
-                  </div>
-                  <div class="range-slider order_distance">
-                     <div class="pull-left">
-                        <span class="slider-label">Доставка Москва:</span>
-                        <div id="order_distance" class="range-slider-field"></div>
-                     </div>
-                     <div class="pull-right">
-                     <input type="text" class="range-slider__value" id="distance_value" value="500">
-                     <i>КМ<span>от МКАД</span></i>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="overall">
-               <div class="pull-left">
-                  <div class="price-wrap">Стоимость топлива с учетом доставки: <span class="overall-price">29 руб/л</span></div>
-                  <div class="asterisk-text">*указана ориентировочная стоимость, подробности уточняйте у менеджера</div>
-               </div>
-               <div class="submit-wrap pull-right">
-                  <input type="submit" class="btn btn-red" name="order" value="Оформить заказ">
-               </div>
-            </div>
-         </form>
-      </div>
-   </div>
-</div>
+
 <?php include "modal.php" ?>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" />

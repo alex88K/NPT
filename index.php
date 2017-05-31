@@ -27,7 +27,16 @@
                <div class="details-title">Транспорт</div>
                <div class="details-sub">Быстрый документооборот<br/>Возможность отсрочки оплаты<br/>Доставка точно в установленные сроки. Гарантируем!</div>
             </div>
-            <a href="#" class="details-btn"><svg class="arrow-i"><use xlink:href="#details-btn-i"></use></svg>Подробнее</a>
+            <a href="#" class="details-btn">
+               <div class="details-animate">
+                  <div class="details-animate-circle">
+                     <div class="spinner"><div class="left-indoor"></div></div>
+                     <div class="pie"><div class="right-indoor"></div></div>
+                     <svg class="arrow-i"><use xlink:href="#arrow-right"></use></svg>
+                  </div>
+                  <span>Подробнее</span>
+               </div>
+            </a>
          </div>
          <div class="details-slide">
             <div class="details-bg cover-image" style="background: transparent url(images/details/boiler.jpg);"></div>
@@ -36,7 +45,16 @@
                <div class="details-title">Для котельных</div>
                <div class="details-sub">Заправляем транспорт с топливными системами CommonRail</div>
             </div>
-            <a href="#" class="details-btn"><svg class="arrow-i"><use xlink:href="#details-btn-i"></use></svg>Подробнее</a>
+            <a href="#" class="details-btn">
+               <div class="details-animate">
+                  <div class="details-animate-circle">
+                     <div class="spinner"><div class="left-indoor"></div></div>
+                     <div class="pie"><div class="right-indoor"></div></div>
+                     <svg class="arrow-i"><use xlink:href="#arrow-right"></use></svg>
+                  </div>
+                  <span>Подробнее</span>
+               </div>
+            </a>
          </div>
          <div class="details-slide">
             <div class="details-bg cover-image" style="background: transparent url(images/details/house.jpg);"></div>
@@ -45,7 +63,16 @@
                <div class="details-title">Для частных<br/>домов и коттеджей</div>
                <div class="details-sub">Аккуратная отгрузка на участке. Оплата наличными на объекте</div>
             </div>
-            <a href="#" class="details-btn"><svg class="arrow-i"><use xlink:href="#details-btn-i"></use></svg>Подробнее</a>
+            <a href="#" class="details-btn">
+               <div class="details-animate">
+                  <div class="details-animate-circle">
+                     <div class="spinner"><div class="left-indoor"></div></div>
+                     <div class="pie"><div class="right-indoor"></div></div>
+                     <svg class="arrow-i"><use xlink:href="#arrow-right"></use></svg>
+                  </div>
+                  <span>Подробнее</span>
+               </div>
+            </a>
          </div>
          <div class="details-slide">
             <div class="details-bg cover-image" style="background: transparent url(images/details/building.jpg);"></div>
@@ -54,7 +81,16 @@
                <div class="details-title">Для строительства</div>
                <div class="details-sub">Заправляем транспорт с топливными системами CommonRail</div>
             </div>
-            <a href="#" class="details-btn"><svg class="arrow-i"><use xlink:href="#details-btn-i"></use></svg>Подробнее</a>
+            <a href="#" class="details-btn">
+               <div class="details-animate">
+                  <div class="details-animate-circle">
+                     <div class="spinner"><div class="left-indoor"></div></div>
+                     <div class="pie"><div class="right-indoor"></div></div>
+                     <svg class="arrow-i"><use xlink:href="#arrow-right"></use></svg>
+                  </div>
+                  <span>Подробнее</span>
+               </div>
+            </a>
          </div>
       </section>
       <section class="advantage">
@@ -144,8 +180,8 @@
                </li>
             </ul>
             <div class="slider-navigation">
-               <div class="slider-next"><svg class="arrow-i"><use xlink:href="#details-btn-i"></use></svg></div>
-               <div class="slider-prev"><svg class="arrow-i"><use xlink:href="#details-btn-i"></use></svg></div>
+               <div class="slider-next"><svg class="arrow-right"><use xlink:href="#arrow-right"></use></svg></div>
+               <div class="slider-prev"><svg class="arrow-right"><use xlink:href="#arrow-right"></use></svg></div>
             </div>
          </div>
       </section>

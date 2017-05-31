@@ -94,7 +94,7 @@ $(function() {
 		margin: 0,
 		
 		autoplay: true,
-		autoplayTimeout: 3000,
+		autoplayTimeout: 2000,
 		autoplayHoverPause: true,
 		autoplaySpeed: 500,
 		responsive: {
@@ -119,7 +119,7 @@ $(function() {
   		loop: true,
   		margin: 15,
   		autoplay: true,
-  		autoplayTimeout: 5000,
+  		autoplayTimeout: 2200,
   		autoplayHoverPause: true,
   		autoplaySpeed: 500,
   		responsive: {
@@ -129,6 +129,16 @@ $(function() {
   			1170: { items: 6}
   		}	
   	});
+
+/*--AJAX Form submit--------------------*/
+
+$(document).on('af_complete', function(event,response) {
+	var form_id = response.form.parents('.modal').attr('id');
+	if (response.success) {
+		$('#'+form_id).modal('hide');
+		$('#modal-mes').modal('show');
+	}
+});
 
 /*--Animation-------------------*/
 
