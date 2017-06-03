@@ -10,10 +10,10 @@ $(function() {
 	
 	var slider_capacity = $("#order_capacity"),
 		slider_distance = $("#order_distance"),
-		tarif = 39,
+		tarif = 32,
 	   result_output = $(".overall-price"),
 	   order_capacity = 50000,
-	   distance = 500;
+	   order_distance = 500;
 	
 	slider_capacity.slider({
 		range: "min",
@@ -30,8 +30,8 @@ $(function() {
 
 	slider_distance.slider({
 		range: "min",
-		value: distance,
-		min: 10,
+		value: order_distance,
+		min: 1,
 		max: 10000,
 		slide: function(event, ui) {
 		   $(".order_distance .range-slider__value").val(ui.value).trigger("change");
@@ -53,16 +53,26 @@ $(function() {
 	});
 
 	$(document).on("change keyup", ".order_distance .range-slider__value", function() {
-	   distance = +$(this).val();
-	   slider_distance.slider("value", distance);
+	   order_distance = +$(this).val();
+	   slider_distance.slider("value", order_distance);
 	   recount();
 	});
 
 	function recount() {
-	   revenue = (order_capacity + distance) * tarif;
+	   if ( order_distance <= 10 ) { 
+	   	revenue = (order_capacity * tarif);
+	   } else {
+	   	revenue = (order_capacity * tarif) + (order_distance * 100) - 1000;
+	   }
+	   
 	   result_output.html(revenue + ' руб/л');
 	};
 
+	$('#do_order').on('click', function() {
+		$('#gas_sort').val( $('#gas_type option:selected').val() );
+		$('#gas_capacity').val( order_capacity );
+		$('#gas_delivery').val( order_distance )
+	});
 
 /*--------------------------------------------------*/ 
 	
@@ -132,13 +142,13 @@ $(function() {
 
 /*--AJAX Form submit--------------------*/
 
-	$(document).on('af_complete', function(event,response) {
-		var form_id = response.form.parents('.modal').attr('id');
-		if (response.success) {
-			$('#'+form_id).modal('hide');
-			$('#modal-mes').modal('show');
-		}
-	});
+$(document).on('af_complete', function(event,response) {
+	var form_id = response.form.parents('.modal').attr('id');
+	if (response.success) {
+		$('#'+form_id).modal('hide');
+		$('#modal-mes').modal('show');
+	}
+});
 
 /*--Animation-------------------*/
 
@@ -265,7 +275,7 @@ function calculator_fit_to_screen() {
 
 function initMap() {
    var map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: 55.697723, lng: 37.5300353},
+      center: {lat: 55.738880, lng: 37.780885},
       zoom: 17,
       styles: [
 		     {
@@ -349,9 +359,8 @@ function initMap() {
 		]
    });
    var marker = new google.maps.Marker({
-      position: {lat: 55.697723, lng: 37.5300353},
+      position: {lat: 55.738880, lng: 37.780885},
       map: map,
-      title: '12345, г. Москва, ул. Ломоносовская дом 1, стр. 1, 30 этаж'
+      title: '111398, г. Москва, ул. Кусковская, д. 16 оф. 3'
    });
 }
-

@@ -16,6 +16,29 @@
 	</div>
 </div>
 <!--  -->
+<div id="modal-orderoil" class="modal fade" tab-index="-1" role="dialog" aria-labelledby="modal-orderoil">
+   <div class="modal-dialog" role="document">
+      <div class="modal-content modal-callback-wrap">
+         <div class="form-title">Заказ на доставку топлива</div>
+         <form action="#" class="contact-form">
+            <input type="hidden" name="gas_sort" id="gas_sort">
+            <input type="hidden" name="gas_capacity" id="gas_capacity">
+            <input type="hidden" name="gas_delivery" id="gas_delivery">
+            <div class="form-group">
+               <input type="text" class="form-control" name="uname" placeholder="Ваше имя">
+            </div>
+            <div class="form-group">
+               <input type="text" class="form-control" name="phone" placeholder="Ваш телефон">
+            </div>
+            <div class="form-group submit-wrap">
+               <input type="submit" name="submit" class="btn btn-submit" value="Отправить">
+            </div>
+         </form>
+      </div>
+      <button class="close" data-dismiss="modal"></button>
+   </div>
+</div>
+<!--  -->
 <div id="modal-mes" class="modal fade" tab-index="-1" role="dialog" aria-labelledby="success message">
    <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -76,7 +99,7 @@
                   <div class="asterisk-text">*указана ориентировочная стоимость, подробности уточняйте у менеджера</div>
                </div>
                <div class="submit-wrap pull-right">
-                  <input type="submit" class="btn btn-red" name="order" value="Оформить заказ">
+                  <button type="button" class="btn btn-red" id="do_order" data-toggle="modal" data-target="#modal-orderoil">Оформить заказ</button>
                </div>
             </div>
          </form>

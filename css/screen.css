@@ -387,13 +387,13 @@ select {
 
 .brand-logo {
   display: inline-block;
-  margin: 10px 0 0 0;
+  margin: -5px 0 0 0;
   text-decoration: none;
   border: none;
 }
 .brand-logo .logo-i {
-  width: 162px;
-  height: 70px;
+  width: 210px;
+  height: 90px;
 }
 .brand-logo:hover, .brand-logo:focus {
   text-decoration: none;
@@ -473,7 +473,7 @@ select {
   margin-left: 35px;
 }
 .header .btn-buy {
-  margin: 20px 0 0 16%;
+  margin: 20px 0 0 12%;
   vertical-align: top;
 }
 
@@ -521,7 +521,7 @@ select {
 .navbar {
   height: auto;
   margin: 0;
-  padding: 12px 0 0 0;
+  padding: 5px 0 0 0;
   border: none;
   border-radius: 0;
 }
@@ -687,7 +687,7 @@ select {
 .navbar-toggle {
   z-index: 1100;
   position: absolute;
-  top: 22px;
+  top: 30px;
   left: 15px;
   width: 50px;
   height: 40px;
@@ -2221,7 +2221,7 @@ select {
 
   .header {
     padding-top: 16px;
-    padding-bottom: 25px;
+    padding-bottom: 42px;
   }
   .header .contact-b-wrap,
   .header .btn-buy {
@@ -2238,7 +2238,7 @@ select {
 
   .mob-header {
     display: block;
-    margin-top: 8px;
+    margin-top: 15px;
   }
 
   .header-top {
@@ -2253,7 +2253,7 @@ select {
     position: absolute;
     top: -5px;
     left: 50%;
-    margin-left: -75px;
+    margin-left: -100px;
   }
 
   .calculator {
@@ -2340,7 +2340,7 @@ select {
   .inner .main-menu .navbar-nav.nav,
   .main-menu .navbar-nav.nav {
     display: block;
-    padding-top: 54px;
+    padding-top: 78px;
     text-align: left;
   }
   .inner .main-menu .navbar-nav.nav .nav-item,
