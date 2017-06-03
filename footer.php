@@ -4,7 +4,6 @@
             <div class="f-col f-col-1 f-brand">
                   <a href="/" class="brand-logo f-logo">
                      <svg class="logo-i"><use id="logo-footer" xlink:href="#logo-svg"></use></svg>
-                     <svg class="logo-i moblogo-i"><use id="moblogo-footer" xlink:href="#moblogo-svg"></use></svg>
                   </a>
                <div class="f-text copyright">
                   <div>© 2003–2017 ООО «НПТ»</div>

@@ -4,7 +4,6 @@
 		<div class="header-top">
 			<a href="index.php" class="brand-logo">
 				<svg class="logo-i"><use id="logo-header" xlink:href="#logo-svg"></use></svg>
-				<svg class="logo-i moblogo-i"><use id="moblogo-header" xlink:href="#moblogo-svg"></use></svg>
 			</a>
 			<a href="#" class="btn btn-wb btn-buy">Купить дизельное топливо</a>
 			<div class="contact-b-wrap">
