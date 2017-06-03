@@ -4,6 +4,12 @@ $(function() {
 	$('.navbar-toggle').jPushMenu({ closeOnClickLink: false });
 	$('.dropdown-toggle').dropdown();
 
+	if( $('.catalog').length > 0 ) {
+		if ( $('.catalog-item-sub .catalog-item').hasClass('active') ) {
+			$('.catalog-item-sub .catalog-item.active').parents('.collapse').addClass('in');
+		}
+	}
+
 /*--calculator-------------------------------------*/
 
 	calculator_fit_to_screen();
@@ -71,7 +77,8 @@ $(function() {
 	$('#do_order').on('click', function() {
 		$('#gas_sort').val( $('#gas_type option:selected').val() );
 		$('#gas_capacity').val( order_capacity );
-		$('#gas_delivery').val( order_distance )
+		$('#gas_delivery').val( order_distance );
+		$('#gas_overall').val( revenue );
 	});
 
 /*--------------------------------------------------*/ 
@@ -172,8 +179,11 @@ function products_slider_fit_to_screen() {
 }
 
 function calculator_fit_to_screen() {
-	var promo_left = $('.header .container').offset().left;
-	$('.calculator').css('left', promo_left + 'px');
+	var promo_left = $('.brand-logo').offset().left;
+	promo_left = 100;
+	$('#calculator').css('position', 'absolute');
+	$('#calculator').css('left', promo_left + 'px');
+	console.log( promo_left );
 }
 
 /*!

@@ -11,7 +11,7 @@
 				<div class="catalog">
 					<a role="button" data-toggle="collapse" href="#catalog" class="catalog-title" aria-expanded="false" aria-controls="catalog">Наша продукция</a>
 					<ul class="catalog-list collapse in" id="catalog">
-						<li class="catalog-item">
+						<li class="catalog-item active">
 							<a role="button" data-toggle="collapse" href="#gasoline-list" aria-expanded="false">Бензин</a>
 							<div class="collapse" id="gasoline-list">
 								<ul class="catalog-item-sub">
@@ -26,7 +26,7 @@
 							<a role="button" data-toggle="collapse" href="#disel-list" aria-expanded="false">Дизельное топливо</a>
 							<div class="collapse" id="disel-list">
 								<ul class="catalog-item-sub" >
-									<li class="catalog-item active"><a href="/">80</a></li>
+									<li class="catalog-item"><a href="/">80</a></li>
 									<li class="catalog-item"><a href="/">95</a></li>
 									<li class="catalog-item"><a href="/">98</a></li>
 									<li class="catalog-item"><a href="/">92</a></li>
@@ -37,7 +37,7 @@
 							<a role="button" data-toggle="collapse" href="#oil-list" aria-expanded="false">Масло</a>
 							<div class="collapse" id="oil-list">
 								<ul class="catalog-item-sub">
-									<li class="catalog-item active"><a href="/">80</a></li>
+									<li class="catalog-item"><a href="/">80</a></li>
 									<li class="catalog-item"><a href="/">95</a></li>
 									<li class="catalog-item"><a href="/">98</a></li>
 									<li class="catalog-item"><a href="/">92</a></li>

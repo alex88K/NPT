@@ -2049,6 +2049,9 @@ select {
 .catalog-list > .catalog-item {
   padding: 0;
 }
+.catalog-list > .catalog-item.active > a {
+  color: #0ca7ce;
+}
 .catalog-list > .catalog-item:before {
   display: none;
 }
@@ -2198,6 +2201,10 @@ select {
 
 .modal-backdrop.in {
   z-index: 3000;
+}
+
+#modal-orderoil.in {
+  z-index: 3060 !important;
 }
 
 /*--MEDIA QUERIES---------------------------------------*/
@@ -2817,6 +2824,10 @@ select {
   }
 }
 @media screen and (max-width: 479px) {
+  .header {
+    padding-bottom: 25px;
+  }
+
   .header .brand-logo {
     top: -2px;
     margin-left: -55px;
@@ -2856,6 +2867,7 @@ select {
 
   .st-select {
     display: block;
+    width: 100%;
   }
   .st-select select {
     width: 100%;

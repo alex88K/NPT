@@ -24,6 +24,7 @@
             <input type="hidden" name="gas_sort" id="gas_sort">
             <input type="hidden" name="gas_capacity" id="gas_capacity">
             <input type="hidden" name="gas_delivery" id="gas_delivery">
+            <input type="hidden" name="gas_delivery" id="gas_overall">
             <div class="form-group">
                <input type="text" class="form-control" name="uname" placeholder="Ваше имя">
             </div>
